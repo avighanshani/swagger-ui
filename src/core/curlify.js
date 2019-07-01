@@ -4,7 +4,6 @@ export default function curl( request ){
   let curlified = []
   let type = ""
   let headers = request.get("headers")
-  curlified.push( "curl" )
   curlified.push( "-X", request.get("method") )
   curlified.push( `"${request.get("url")}"`)
 
